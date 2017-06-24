@@ -1,4 +1,4 @@
-"""Defines a factor function for producing hab_mc Flask objects."""
+"""Defines a factory function for producing Flask objects."""
 from flask import Flask, render_template
 from config import config
 
