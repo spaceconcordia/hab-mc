@@ -1,4 +1,4 @@
-### HAB-MC
+# HAB-MC
 Mission control software for Space Concordia's High Altitude Balloon project,
 based on NASA's Open MCT. This README is intended for project developers.
 

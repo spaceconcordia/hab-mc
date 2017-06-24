@@ -9,6 +9,6 @@
     "openmct": "https://github.com/nasa/openmct"
   },
   "scripts": {
-    "postinstall": "cd static/node_modules/openmct && yarn install"
+    "postinstall": "cd hab_mc/static/node_modules/openmct && yarn install"
   }
 }
