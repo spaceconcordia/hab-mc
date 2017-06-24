@@ -8,5 +8,5 @@ based on NASA's Open MCT. This README is intended for project developers.
 --modules-folder hab_mc/static/node_modules`.
 
 To run the server, execute the command `python3 app.py runserver`. This will
-launch the server in 'dev' mode. Pass a `-c,--config` to change to 'test' or
-'prod' mode. `python3 app.py` simply displays a help page.
+launch the server in 'dev' mode. Pass a `-c,--config` option to change to 'test'
+or 'prod' mode. `python3 app.py` simply displays a help page.
