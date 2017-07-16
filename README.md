@@ -4,8 +4,7 @@ based on NASA's Open MCT. This README is intended for project developers.
 
 ## Installation
 1. Install the required Python modules with `pip3 install -r requirements.txt`.
-1. Install the required JavaScript libraries with `yarn install
---modules-folder hab_mc/static/node_modules`.
+1. Install the required JavaScript libraries with `yarn`.
 
 To run the server, execute the command `python3 app.py runserver`. This will
 launch the server in 'dev' mode. Pass a `-c,--config` option to change to 'test'
