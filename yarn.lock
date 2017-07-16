@@ -101,8 +101,8 @@ d3-axis@^1.0.4:
   resolved "https://registry.yarnpkg.com/d3-axis/-/d3-axis-1.0.8.tgz#31a705a0b535e65759de14173a31933137f18efa"
 
 d3-collection@1, d3-collection@^1.0.2:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/d3-collection/-/d3-collection-1.0.3.tgz#00bdea94fbc1628d435abbae2f4dc2164e37dd34"
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/d3-collection/-/d3-collection-1.0.4.tgz#342dfd12837c90974f33f1cc0a785aea570dcdc2"
 
 d3-color@1, d3-color@^1.0.2:
   version "1.0.3"
@@ -407,7 +407,7 @@ on-finished@~2.3.0:
 
 "openmct@https://github.com/nasa/openmct":
   version "0.12.1-SNAPSHOT"
-  resolved "https://github.com/nasa/openmct#d3b313d8aa53f3d3d4059541097f0428b23755fb"
+  resolved "https://github.com/nasa/openmct#23839b05b0130792a6541942aac5bf7c21c11542"
   dependencies:
     d3-array "^1.0.2"
     d3-axis "^1.0.4"
@@ -481,9 +481,13 @@ request@^2.69.0:
     tunnel-agent "^0.6.0"
     uuid "^3.0.0"
 
+requirejs@^2.3.3:
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/requirejs/-/requirejs-2.3.3.tgz#aa59fd3a0287eaf407959a138228044b5dd6a6a3"
+
 safe-buffer@^5.0.1:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.0.tgz#fe4c8460397f9eaaaa58e73be46273408a45e223"
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.1.tgz#893312af69b2123def71f57889001671eeb2c853"
 
 send@0.15.3:
   version "0.15.3"

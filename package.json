@@ -1,14 +1,9 @@
 {
-  "name": "hab-mc",
-  "version": "1.0.0",
-  "description": "Mission control for Space Concordia's High Altitude Balloon",
-  "repository": "https://github.com/spaceconcordia/hab-mc",
-  "author": "Alessandro Power <alessandrojpower@gmail.com>",
-  "license": "Apache-2.0",
   "dependencies": {
-    "openmct": "https://github.com/nasa/openmct"
+    "openmct": "https://github.com/nasa/openmct",
+    "requirejs": "^2.3.3"
   },
   "scripts": {
-    "postinstall": "cd hab_mc/static/node_modules/openmct && yarn install"
+    "postinstall": "cd hab_mc/static/js/node_modules/openmct && yarn install"
   }
 }

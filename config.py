@@ -1,4 +1,4 @@
-"""Contains configuration classes for hab_mc."""
+"""Defines configuration classes."""
 
 
 class Config:
@@ -21,9 +21,9 @@ class ProdConfig(Config):
     pass
 
 
-config = {
+# Maps configuration names to their corresponding config class.
+config_lookup = {
     'dev': DevConfig,
     'test': TestConfig,
     'prod': ProdConfig,
 }
-"""Maps configuration names to their corresponding config class."""
