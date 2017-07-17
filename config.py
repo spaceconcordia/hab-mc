@@ -18,6 +18,6 @@ class ProdConfig(Config):
 
 # Maps configuration names to their corresponding config class.
 config_lookup = {
-    'dev': DevConfig,
-    'prod': ProdConfig,
+    'development': DevConfig,
+    'production': ProdConfig,
 }
