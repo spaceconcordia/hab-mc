@@ -2,6 +2,9 @@
  * Launches the Open MCT application.
  */
 
+/**
+ * Returns the base url for websocket connections.
+ */
 function wsBaseUrl() {
     'use strict';
 
@@ -20,10 +23,10 @@ require(['openmct'], function (openmct) {
     'use strict';
 
     // Create WebSocket to receive telemetry data over.
-    var telemUrl = wsBaseUrl() + '/telemetry';
-    var socket = new WebSocket(telemUrl);
+    var wsUrl = wsBaseUrl() + '/telemetry';
+    var socket = new WebSocket(wsUrl);
 
-    openmct.setAssetPath('/static/node_modules/openmct/dist'); //TODO
+    openmct.setAssetPath('node_modules/openmct/dist');
     openmct.install(openmct.plugins.LocalStorage());
     openmct.install(openmct.plugins.UTCTimeSystem());
     openmct.install(openmct.plugins.Espresso());
