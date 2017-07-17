@@ -12,7 +12,7 @@
  */
 var openmctConfig = {
     openmctDir: '{{ url_for('static', filename='js/node_modules/openmct/dist') }}',
-    websocketUrl: '{{ websocket_url }}'
+    websocketUrl: (window.location.protocol === 'https:' ? 'wss:' : 'ws:') + '//' + window.location.host + '/location'
 };
 
 require.config({
