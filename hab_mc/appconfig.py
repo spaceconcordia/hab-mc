@@ -15,14 +15,4 @@ def create_app(config_name):
     except KeyError as e:
         raise ConfigError(e)
 
-    @app.route('/')
-    def index():
-        """Renders index.html."""
-        return render_template('index.html')
-
-    @app.route('/scripts/main.js')
-    def main():
-        """Renders scripts/main.js, which initializes and runs the Open MCT
-        application."""
-        return render_template('scripts/main.js')
     return app
