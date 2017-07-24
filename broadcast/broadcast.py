@@ -10,7 +10,10 @@ logger = logging.getLogger(__name__)
 
 class SubscriptionProtocol(asyncio.Protocol):
     """
-
+    An instance of this class is created whenever a client connects to the
+    broadcast server. The protocol registers the client to the collection of
+    subscribers, and can be prompted to notify the client whenever a message is
+    ready.
     """
     TIMEOUT = 100
 
@@ -59,7 +62,8 @@ class SubscriptionProtocol(asyncio.Protocol):
 
 class Broadcaster:
     """
-
+    Maintains a collection of subscribers, who can be notified when a message is
+    ready.
     """
 
     def __init__(self, loop=None):

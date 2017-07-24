@@ -14,8 +14,9 @@ logger = logging.getLogger(__name__)
 realtime = Blueprint(name='realtime', import_name='server')
 
 
-def separate(data):
+def separate(data: dict):
     """
+    Yield a telemetry datum.
     """
     # Incoming timestamp is in seconds.
     timestamp = int(data['timestamp'] * 1000)
@@ -29,18 +30,11 @@ def separate(data):
         }
 
 
-async def send_telem(ws: WebSocket, data):
-    """
-
-    """
-    for datum in separate(data):
-        ws.send(datum)
-
-
 @realtime.route('')
 def subscribe(ws: WebSocket):
     """
-
+    Connect to the broadcast server and subscribe to telemetry data, which is
+    sent down the WebSocket whenever it is received.
     """
     sock = socket.socket(socket.AF_UNIX)
     server_address = app.config['BROADCAST_PATH']
